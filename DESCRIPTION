@@ -1,0 +1,36 @@
+Package: interactionRCS
+Type: Package
+Title: Calculate Estimates in Models with Interaction
+Version: 0.1.0
+Date: 2022-02-25
+Authors@R: 
+    c(person(given = "Giorgio",
+            family = "Melloni",
+            role = c("aut", "cre"),
+            email = "melloni.giorgio@gmail.com",
+            comment = c(ORCID = "0000-0001-6371-1334")),
+    person(given = "Andrea",
+            family = "Bellavia",
+            role = c("aut"),
+            email = "abellavia@bwh.harvard.edu",
+            comment = c(ORCID = "0000-0003-4988-4532")))
+Description: A tool to calculate and plot estimates from models 
+    in which an interaction between the main predictor and a continuous covariate has been specified.
+    Methods used in the package refer to Harrell Jr FE (2015, ISBN:9783319330396); 
+    Durrleman S, Simon R. (1989) <doi:10.1002/sim.4780080504>; Greenland S. (1995) <doi:10.1097/00001648-199507000-00005>.
+License: GPL-3
+Depends: R (>= 3.6)
+Imports: graphics, grDevices, stats, utils, methods, parallel,
+        survival, msm, rms, boot, pspline, pryr, mlbench
+Suggests: knitr, rmarkdown, dplyr
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Packaged: 2022-02-25 19:53:46 UTC; gem37
+Author: Giorgio Melloni [aut, cre] (<https://orcid.org/0000-0001-6371-1334>),
+  Andrea Bellavia [aut] (<https://orcid.org/0000-0003-4988-4532>)
+Maintainer: Giorgio Melloni <melloni.giorgio@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-03-01 08:50:02 UTC
