@@ -22,6 +22,7 @@ if(!"devtools" %in% rownames(installed.packages())){
   install.packages("devtools")
 }
 devtools::install_github("https://github.com/gmelloni/interactionRCS.git")
+# or alternative devtools::install_git("https://github.com/gmelloni/interactionRCS.git")
 library(interactionRCS)
 ```
 
@@ -37,6 +38,6 @@ plotINT(int, ...)
 For a detailed introduction to `interactionRCS` and code examples please refer to this [vignette](https://raw.githack.com/gmelloni/interactionRCS/main/inst/extdata/vignette.html)
 
 ### Authors
-Giorgio Melloni, Andrea Bellavia
+Giorgio Melloni, Hong Xiong, Andrea Bellavia
 
 TIMI study group, Department of Cardiovascular Medicine, Brigham and Womens Hospital / Harvard Medical School

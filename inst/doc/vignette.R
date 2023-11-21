@@ -5,7 +5,6 @@ knitr::opts_chunk$set(echo = TRUE)
 library(survival)
 library(rms)
 library(interactionRCS)
-
 data(umaru, package = "interactionRCS")
 
 ## ---- warning=FALSE, message=FALSE--------------------------------------------
