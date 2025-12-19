@@ -1,10 +1,12 @@
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/gmelloni/interactionRCS/workflows/R-CMD-check/badge.svg)](https://github.com/gmelloni/interactionRCS/actions)
+[![Total-downloads](https://cranlogs.r-pkg.org/badges/grand-total/interactionRCS)](https://cranlogs.r-pkg.org/badges/grand-total/interactionRCS)
+[![Monthly-downloads](https://cranlogs.r-pkg.org/badges/interactionRCS?color=orange)](https://cranlogs.r-pkg.org/badges/interactionRCS?color=orange)
 <!-- badges: end -->
 
 # interactionRCS
 #### A tool to calculate and plot Hazard Ratios, Odds Ratios or linear estimates in a simple or restricted cubic splined interaction model
-#### Version 1.1 (February 25, 2022)
+#### Version 1.2 (December, 2025)
 ---
 
 ### Description

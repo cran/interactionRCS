@@ -7,7 +7,7 @@ library(rms)
 library(interactionRCS)
 data(umaru, package = "interactionRCS")
 
-## ---- warning=FALSE, message=FALSE--------------------------------------------
+## ----warning=FALSE, message=FALSE---------------------------------------------
 
 myformula <- Surv(time, censor) ~ treat*rcs(age, 3) + site + nonwhite + ivdrug
 model_rcs <- cph(myformula , data = umaru , x = TRUE , y=TRUE)
@@ -28,7 +28,7 @@ HR_rcs_boot <- intEST( var2values = c(20:50)
 
 plotINT(HR_rcs_boot , xlab = "Age")
 
-## ---- warning=FALSE, message=FALSE--------------------------------------------
+## ----warning=FALSE, message=FALSE---------------------------------------------
 
 myformula <- Surv(time, censor) ~ treat*age + site + nonwhite + ivdrug
 model_loglin <- cph(myformula , data = umaru , x = TRUE , y=TRUE)
@@ -44,7 +44,7 @@ HR_loglin_boot <- intEST( var2values = c(20:50)
 
 plotINT(HR_loglin_boot , xlab = "Age")
 
-## ---- warning=FALSE, message=FALSE--------------------------------------------
+## ----warning=FALSE, message=FALSE---------------------------------------------
 
 myformula <- Surv(futime, status) ~ age*rcs(bmi, 3) + male
 model2_rcs <- cph(myformula , data = nafld1 , x = TRUE , y=TRUE)
@@ -56,7 +56,7 @@ HR2_rcs_delta <- intEST( var2values = c(15:50)
 plotINT(HR2_rcs_delta , xlab = "BMI")
 
 
-## ---- warning=FALSE, message=FALSE--------------------------------------------
+## ----warning=FALSE, message=FALSE---------------------------------------------
 
 nafld1$age5<-nafld1$age/5
 
@@ -70,7 +70,7 @@ HR3_rcs_delta <- intEST( var2values = c(15:50)
 plotINT(HR3_rcs_delta , xlab = "BMI")
 
 
-## ---- warning=FALSE, message=FALSE--------------------------------------------
+## ----warning=FALSE, message=FALSE---------------------------------------------
 
 myformula <- Surv(futime, status) ~ age*bmi + male
 model2_loglin <- cph(myformula , data = nafld1 , x = TRUE , y=TRUE)

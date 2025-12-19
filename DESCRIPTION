@@ -1,8 +1,8 @@
 Package: interactionRCS
 Type: Package
 Title: Calculate Estimates in Models with Interaction
-Version: 0.1.1
-Date: 2023-11-21
+Version: 0.1.2
+Date: 2025-12-19
 Authors@R: 
     c(person(given = "Giorgio",
             family = "Melloni",
@@ -26,18 +26,19 @@ Description: A tool to calculate and plot estimates from models
 License: GPL-3
 Depends: R (>= 3.6)
 Imports: graphics, stats, utils, survival, msm, rms, boot, pspline,
-        pryr, stringr
+        rlang, stringr
 Suggests: knitr, rmarkdown, dplyr, mlbench, grDevices, parallel,
         methods
 VignetteBuilder: knitr
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 Encoding: UTF-8
 LazyData: true
 NeedsCompilation: no
-Packaged: 2023-11-21 21:57:55 UTC; gem37
-Author: Giorgio Melloni [aut, cre] (<https://orcid.org/0000-0001-6371-1334>),
-  Andrea Bellavia [aut] (<https://orcid.org/0000-0003-4988-4532>),
-  Hong Xiong [aut] (<https://orcid.org/0000-0003-4402-7478>)
+Packaged: 2025-12-19 19:33:38 UTC; gem37
+Author: Giorgio Melloni [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6371-1334>),
+  Andrea Bellavia [aut] (ORCID: <https://orcid.org/0000-0003-4988-4532>),
+  Hong Xiong [aut] (ORCID: <https://orcid.org/0000-0003-4402-7478>)
 Maintainer: Giorgio Melloni <melloni.giorgio@gmail.com>
 Repository: CRAN
-Date/Publication: 2023-11-21 22:40:02 UTC
+Date/Publication: 2025-12-19 19:50:02 UTC

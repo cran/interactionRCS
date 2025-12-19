@@ -40,7 +40,7 @@
 #' , if ci = TRUE a dataframe with 5 columns, initial values, OR/HR/linear estimates, lower CI, upper CI and SE
 #' @importFrom rms lrm rcs cph
 #' @importFrom survival coxph
-#' @importFrom pryr modify_call
+#' @importFrom rlang call_modify expr
 #' @importFrom msm deltamethod
 #' @importFrom boot boot boot.ci
 #' @importFrom stats vcov coef as.formula qnorm sd glm
@@ -66,7 +66,7 @@ intEST <- function(var2values , model , data , var1 , var2
     }
   } else if(any(c("Glm" , "glm") %in% modelClass)){
     family <- model$family$family
-    if(family == "gaussian"){
+    if(family %in% c("gaussian","quasi")){
       if(isRCS){
         argg[[1]] <- as.name("rcsLIN")
       } else {
